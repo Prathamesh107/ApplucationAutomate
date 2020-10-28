@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="88936" started-at="2020-10-28T05:00:37Z" finished-at="2020-10-28T05:02:06Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="88936" started-at="2020-10-28T05:00:37Z" finished-at="2020-10-28T05:02:06Z">
+      <class name="com.testcases.LoginTestcase">
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.testcases.LoginTestcase@61e3a1fd]" name="startUp" is-config="true" duration-ms="37000" started-at="2020-10-28T05:00:37Z" finished-at="2020-10-28T05:01:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="startUp()[pri:0, instance:com.testcases.PasswordTestCase@51abf713]" name="startUp" is-config="true" duration-ms="9193" started-at="2020-10-28T05:01:14Z" finished-at="2020-10-28T05:01:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startUp -->
+        <test-method status="PASS" signature="login()[pri:0, instance:com.testcases.LoginTestcase@61e3a1fd]" name="login" duration-ms="2150" started-at="2020-10-28T05:01:23Z" finished-at="2020-10-28T05:01:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="close()[pri:0, instance:com.testcases.LoginTestcase@61e3a1fd]" name="close" is-config="true" duration-ms="24733" started-at="2020-10-28T05:01:41Z" finished-at="2020-10-28T05:02:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+        <test-method status="FAIL" signature="close()[pri:0, instance:com.testcases.PasswordTestCase@51abf713]" name="close" is-config="true" duration-ms="64" started-at="2020-10-28T05:02:06Z" finished-at="2020-10-28T05:02:06Z">
+          <exception class="org.openqa.selenium.NoSuchSessionException">
+            <message>
+              <![CDATA[Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NII-LT-246', ip: '192.168.195.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NII-LT-246', ip: '192.168.195.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: driver.version: RemoteWebDriver
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
+at SeleniumUtility.SeleniumReusable.to_take_screenshot(SeleniumReusable.java:26)
+at com.testcases.PasswordTestCase.close(PasswordTestCase.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.afterRun(TestRunner.java:725)
+at org.testng.TestRunner.run(TestRunner.java:509)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- close -->
+      </class> <!-- com.testcases.LoginTestcase -->
+      <class name="com.testcases.PasswordTestCase">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.testcases.PasswordTestCase@51abf713]" name="login" duration-ms="14757" started-at="2020-10-28T05:01:26Z" finished-at="2020-10-28T05:01:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- com.testcases.PasswordTestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
